@@ -1,21 +1,19 @@
 <!doctype html>
 <html>
-<head>
-    <title>Order Fruit</title>
-    <script>
-        function processConfirm(answer) {
-            let result = "";
-            if (answer) {
-                result = "Excellent. We'll play a nice game of chess.";
-            } else {
-                result = "Maybe later then.";
-            }
-            return result;
-        }
-        let confirmAnswer = confirm("Shall we play a game?");
-        let theAnswer = processConfirm(confirmAnswer);
-        alert(theAnswer);
-    </script>
+<
+<div className="panel">
+    <div className="panel-heading">
+        Input product detail information
+    </div>
+    <div className="panel-body">
+        <form method="post">
+            <div className="form-group">
+                <label>Product Name:</label>
+                <input type="number" name="index" id="index" value="" hidden="true">
+                <input className="form-control" type="text" name="product_name" id="product_name"
+                       placeholder="Enter product name">
+            </div>
+
 </head>
 <body>
 
